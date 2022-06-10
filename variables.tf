@@ -2,14 +2,14 @@ variable "default_tags" {
   type        = map(string)
   description = "Map of default tags to apply to resources"
   default = {
-    project = "Learning Live with AWS & HashiCorp"
+    project = "AWS & HashiCorp"
   }
 }
 
 variable "region" {
   type        = string
   description = "The region to deploy resources to"
-  default     = "us-east-1"
+  default     = "us-west-2"
 }
 
 # VPC Variables
