@@ -51,7 +51,7 @@ resource "aws_ecs_service" "fruits_v2" {
   network_configuration {
     subnets          = aws_subnet.private.*.id
     assign_public_ip = false
-    security_groups = [aws_security_group.ecs_fruits_service.id, aws_security_group.consul_client.id]
+    security_groups  = [aws_security_group.ecs_fruits_service.id, aws_security_group.consul_client.id]
   }
 
   propagate_tags = "TASK_DEFINITION"

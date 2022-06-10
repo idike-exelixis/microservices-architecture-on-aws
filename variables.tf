@@ -34,7 +34,7 @@ variable "private_subnet_count" {
 variable "database_private_ip" {
   type        = string
   description = "Private ip address of database. Make sure the IP is within the range of the vpc_cidr variable."
-  default = "10.255.2.253"
+  default     = "10.255.2.253"
 }
 
 variable "ec2_key_pair" {
@@ -80,10 +80,10 @@ variable "consul_dc1_name" {
 
 variable "tfc_organization" {
   description = "Name of Terraform Cloud Organization. Set in TFC workspace variables or via variable file."
-  type = string
+  type        = string
 }
 
 variable "tfc_workspace_tag" {
   description = "Name of Terraform Cloud Tag. All created workspaces share this tag."
-  type = string
+  type        = string
 }

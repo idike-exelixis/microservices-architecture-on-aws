@@ -221,7 +221,7 @@ module "fruits_v2" {
   port                           = "9090"
   log_configuration              = local.fruits_v2_sidecars_log_configuration
   tls                            = true
-  retry_join = local.server_private_ips
+  retry_join                     = local.server_private_ips
   depends_on = [
     module.consul_acl_controller
   ]

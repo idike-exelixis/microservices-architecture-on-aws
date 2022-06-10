@@ -16,5 +16,5 @@ output "consul_server_endpoint" {
 
 output "project_tag" {
   description = "the tag used on all deployed resources and also as the service prefix"
-  value = local.project_tag
+  value       = local.project_tag
 }
